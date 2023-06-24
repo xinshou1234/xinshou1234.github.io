@@ -1,1 +1,328 @@
-hello ,nihao
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" > 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>站长工具箱-站长老五</title>
+		<meta name="description" content="免费网站seo工具大全" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="my.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.list-group-item {
+    position: relative;
+    display: block;
+    padding: 5px 3px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+			html,body{
+				background-color: white;
+			}
+			#sousuo2 li{
+				float: left;
+				margin-right: 20px;
+			}
+			li{
+				list-style: none;
+			}
+
+			th,td{
+			text-align:center;
+			}
+			#left li{
+			float:left;
+			margin-right: 10px;
+			}
+			#pingtai a{
+			    font-size: 17px;
+			}
+			.ico{
+			    width:20px;
+			    height:20px;
+			    margin-right: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="row clearfix" style='min-height:800px;'>
+			<nav style="background-color:yellow ;" class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+						<h1 style="color: green;font-size: 32px;margin: 0px;" class="navbar-brand">站长工具箱-站长老五</h1>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						</ul>
+					</div>
+
+				</nav>
+				
+				<div class="col-md-9 column">
+					<div style="text-align: center;">
+						<!--<img id="img" style="width:200px;" src="images/bing.jpg" />-->
+						<div id="mm" style="font-size: 28px;color:blue;margin: 5px;width:200px;height:35px;background-color: #F5F5F5;margin: 0 auto;">
+							必应搜索
+						</div>
+					</div>
+					<div id='huiche' style="padding:10px;background-color: #F5F5F5;">
+						<ul id="sousuo" class="nav nav-tabs" style="margin: auto;">
+
+							<li class="active">
+								<a href="#">必应</a>
+							</li>
+							<li>
+								<a href="#">搜狗</a>
+							</li>
+							<li>
+								<a href="#">360</a>
+							</li>
+							<!--<li>
+								<a href="#">谷歌</a>
+							</li>-->
+							<li>
+								<a href="#">头条</a>
+							</li>
+							<li>
+								<a href="#">神马</a>
+							</li>
+							<li>
+								<a href="#">百度</a>
+							</li>
+						</ul>
+						<div>
+							<input name='neirong' id="neirong" type="text" style="width: 75%;height: 35px;" placeholder="输入关键词或域名" />
+							<button onclick="xuanze()" type="submit" class="btn btn-default">搜索</button>
+						</div>
+						<ul id="sousuo2" style="padding-left: 0px;min-height: 15px;">
+
+							<li class="active">
+								<a href="#">站长之家</a>
+							</li>
+							<li>
+								<a href="#">5118</a>
+							</li>
+							<li>
+								<a href="#">爱站网</a>
+							</li>
+							<li>
+								<a href="#">查友链</a>
+							</li>
+							<li>
+								<a href="#">查反链</a>
+							</li>
+						</ul>
+					</div>
+					<div class="alert alert-dismissable" style="margin-bottom: 0px;">
+						<div class="btn-toolbar" role="toolbar">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default" style='background-color:yellow;'><a target='_blank' rel='nofollow' href='https://www.4414.cn'>4414站长论坛</a></button>
+								<button type="button" class="btn btn-default" style='background-color:#F5F5F5;'><a target='_blank' rel='nofollow' href='wailian/chakan.php?id=318'>查备案</a></button>
+								<button type="button" class="btn btn-default" style='background-color:yellow;'><a target='_blank' href='baidutijiao/'>百度提交</a></button>
+								
+							    <button type="button" class="btn btn-default" style='background-color:#F5F5F5;'><a target='_blank' href='qingxi/'>文章清洗</a></button>
+								<button type="button" class="btn btn-default" style='background-color:yellow;'><a target='_blank' href="wailian/">蛮族外链</a></button>
+								<button type="button" class="btn btn-default" style='background-color:#F5F5F5;'><a target='_blank' href='chaojiwailian/'>超级外链</a></button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 col-sm-12" style='padding:0px;'>
+						<div class="col-sm-6" style="margin-left:0px;margin-top:0px;padding:10px;background-color: ;">
+						<!--轮播图-->
+						<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img style='height:270px;' src="images/3.jpg" alt="First slide">
+        </div>
+        <div class="item">
+            <img style='height:270px;' src="images/2.jpg" alt="Second slide">
+        </div>
+    </div>
+</div>
+					</div>
+					    <div class="col-sm-3" style="min-height:290px;margin-left:0px;margin-top:0px;padding:10px;background-color: ;">
+						<ul id='pingtai2' class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">发帖平台</li>
+						<li class="list-group-item"><a href="#">百家号</a></li>
+						<li class="list-group-item active"><a href="#">头条号</a></li>
+						
+						<li class="list-group-item"><a href="#">搜狐号</a></li>
+						<li class="list-group-item"><a href="#">简书</a></li>
+						<li class="list-group-item"><a href="#">CSDN</a></li>
+						<li class="list-group-item"><a href="#">博客园</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3" style="min-height:290px;margin-left:0px;margin-top:0px;padding:10px;background-color: ;">
+						<ul id='pingtai' class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">站长平台</li>
+						<li class="list-group-item active"><a href="#">百度站长平台</a></li>
+						<li class="list-group-item"><a href="#">必应站长平台</a></li>
+						<li class="list-group-item"><a href="#">搜狗站长平台</a></li>
+						<li class="list-group-item"><a href="#">360站长平台</a></li>
+						<li class="list-group-item"><a href="#">头条站长平台</a></li>
+						<li class="list-group-item"><a href="#">神马站长平台</a></li>
+						</ul>
+					</div>
+					</div>
+					<div class="col-xs-12 col-sm-12" style='padding:0px;'>
+					<div class="col-sm-3">
+						<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">图片工具</li>
+						<li class="list-group-item"><a target='_blank' href="">图片制作-图怪兽</a></li>
+						<li class="list-group-item"><a target='_blank' href="">在线PS-一键抠图</a></li>
+						<li class="list-group-item"><a target='_blank' href="">ico图标生成</a></li>
+						<li class="list-group-item"><a target='_blank' href="">美图秀秀</a></li>
+					</ul>
+					</div>
+					<div class="col-sm-3">
+						
+						<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">伪原创工具</li>
+						<li class="list-group-item"><a target='_blank' href="">百度翻译</a></li>
+					</ul>
+					</div>
+					<div class="col-sm-3">
+						<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">爬虫工具</li>
+						<li class="list-group-item"><a target='_blank' href="">火车采集器</a></li>
+						<li class="list-group-item"><a target='_blank' href="">八爪鱼采集器</a></li>
+					</ul>
+					</div>
+					<div class="col-sm-3">
+						
+						<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">SEO工具</li>
+						<li class="list-group-item"><a target='_blank' href="changwei/">关键词挖掘工具</a></li>
+						<li class="list-group-item"><a target='_blank' href="">sitemap生成工具</a></li>
+						<li class="list-group-item"><a target='_blank' href="">死链查询工具</a></li>
+						<li class="list-group-item"><a target='_blank' href="">百度批量提交工具</a></li>
+					</ul>
+					</div>
+					</div>
+					<div class="col-sm-3">
+						<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">代码工具</li>
+						<li class="list-group-item"><a target='_blank' href="">时间戳转换</a></li>
+						<li class="list-group-item"><a target='_blank' href="">JSON解析</a></li>
+						<li class="list-group-item"><a target='_blank' href="">JS加密</a></li>
+						<li class="list-group-item"><a target='_blank' href="">工具大全</a></li>
+					</ul>
+					</div>
+					<div class="col-sm-3">
+						
+						<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">建站工具</li>
+						<li class="list-group-item"><a target='_blank' href="bootstrap/">拖拽生成html网页</a></li>
+						<li class="list-group-item"><a target='_blank' href="">cms建站</a></li>
+						<li class="list-group-item"><a target='_blank' href="">静态网站生成器</a></li>
+					</ul>
+					</div>
+					<div class="col-sm-3">
+						<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">模板资源</li>
+						<li class="list-group-item"><a target='_blank' href="">17素材网</a></li>
+						<li class="list-group-item"><a target='_blank' href="">模板之家</a></li>
+					</ul>
+					</div>
+					<div class="col-sm-3">
+						
+						<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">学习资料</li>
+						<li class="list-group-item"><a target='_blank' href="">菜鸟教程</a></li>
+						<li class="list-group-item"><a target='_blank' href="">自强学堂</a></li>
+					</ul>
+					</div>
+					
+				</div>
+				<div class="col-md-3 column">
+				<ul class="list-group">
+						<li class="list-group-item">
+						<div style='text-align:center;margin:0 auto;font-size:32px;color:red;'>
+						站长老五
+						</div>
+						</li>
+						<li class="list-group-item">一个闷骚的站长</li>
+						<li class="list-group-item">在线工具和软件都是免费的，放心用，无毒无木马。</li>
+						<span class="label label-default">标签</span> <span class="label label-default">标签</span>
+						<span class="label label-default">标签</span> <span class="label label-default">标签</span>
+					</ul>
+					<div id=NewsToolBox></div>
+					<ul class="list-group">
+						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">软件验证码</li>
+						<li class="list-group-item" style="color:red;">
+						<span id='txt2' style="font-size:22px;">
+						UJND
+						</span>
+						<span>
+						<button id='copy'>复制</button>
+						</span>
+						<span id='state' style='color:green;'>
+						
+						</span>
+						</li>
+						</ul>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;background-color: yellow;min-height: 60px;text-align: center;">
+			    <div class="col-md-12">
+					<p style="margin-top:20px;text-align:center;">网站备案：ICP备xxxxxxxxx号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+function set(){
+document.getElementById("state").innerText='复制成功！';
+setTimeout(function() {
+				document.getElementById("state").innerText='';
+			}, 1000);
+}
+    // 复制全文
+    document.getElementById("copy").onclick=function(){
+        var ssrsss =document.getElementById("txt2").innerText.replace(/\ +/g, ""); //获取文本并去掉空格
+		ssrsss = ssrsss.replace(/\s/g,"");
+            var flag = copyText(ssrsss); //传递文本
+            //alert(flag ? '复制成功' : '复制失败')
+				set();
+        };
+
+        function copyText(text) {
+            var textarea = document.createElement("textarea"); //创建input对象
+            var currentFocus = document.activeElement; //当前获得焦点的元素
+            var toolBoxwrap = document.getElementById('NewsToolBox'); //将文本框插入到NewsToolBox这个之后
+            toolBoxwrap.appendChild(textarea); //添加元素
+            textarea.value = text;
+            textarea.focus();
+            if (textarea.setSelectionRange) {
+                textarea.setSelectionRange(0, textarea.value.length); //获取光标起始位置到结束位置
+            } else {
+                textarea.select();
+            }
+            try {
+                var flag = document.execCommand("copy"); //执行复制
+            } catch (eo) {
+                var flag = false;
+            }
+            toolBoxwrap.removeChild(textarea); //删除元素
+            currentFocus.focus();
+            return flag;
+        }
+    </script>
