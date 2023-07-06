@@ -50,6 +50,45 @@
 			    margin-right: 20px;
 			}
 		</style>
+		<style type="text/css">  
+        .blink{ 
+    	font-size: 46px; 
+    	color:#4cc134; 
+    	margin: 10px;
+    	animation: changeshadow 1s  ease-in  infinite ;
+    	/* 其它浏览器兼容性前缀 */
+	    -webkit-animation: changeshadow 1s linear infinite;
+	    -moz-animation: changeshadow 1s linear infinite;
+	    -ms-animation: changeshadow 1s linear infinite;
+	    -o-animation: changeshadow 1s linear infinite;
+    }  
+    @keyframes changeshadow {  
+        0%{ text-shadow: 0 0 4px #4cc134}  
+        50%{ text-shadow: 0 0 40px #4cc134}  
+        100%{ text-shadow: 0 0 4px #4cc134}  
+    }
+    /* 添加兼容性前缀 */
+	@-webkit-keyframes changeshadow {
+	  0%{ text-shadow: 0 0 4px #4cc134}  
+          50%{ text-shadow: 0 0 40px #4cc134}  
+          100%{ text-shadow: 0 0 4px #4cc134}  
+	}
+	@-moz-keyframes changeshadow {
+	    0%{ text-shadow: 0 0 4px #4cc134}  
+            50%{ text-shadow: 0 0 40px #4cc134}  
+            100%{ text-shadow: 0 0 4px #4cc134}  
+	}
+	@-ms-keyframes changeshadow {
+	    0%{ text-shadow: 0 0 4px #4cc134}  
+            50%{ text-shadow: 0 0 40px #4cc134}  
+            100%{ text-shadow: 0 0 4px #4cc134}  
+	}
+	@-o-keyframes changeshadow {
+	    0%{ text-shadow: 0 0 4px #4cc134}  
+            50%{ text-shadow: 0 0 40px #4cc134}  
+            100%{ text-shadow: 0 0 4px #4cc134}  
+	}
+    </style>  
 	</head>
 
 	<body>
@@ -252,6 +291,7 @@
 						</span>
 						</li>
 						</ul>
+					<div class="blink">广告位出租600元/年</div>
 					<ul id='pingtai2' class="list-group">
 						<li class="list-group-item" style="text-align: center;font-size: 20px;color: green;background-color: #F5F5F5;">发帖平台</li>
 						<li class="list-group-item"><img class="ico" src='https://www.baidu.com/favicon.ico' /><a target='_blank' rel='nofollow' href="https://baijiahao.baidu.com/">百家号</a></li>
