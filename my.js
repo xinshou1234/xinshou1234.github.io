@@ -74,6 +74,10 @@ function qiehuan(self){
 		//img.src = "images/baidu.jpg";
 		mm.innerHTML="百度搜索";
 	}
+	if(cc == "谷歌") {
+		//img.src = "images/baidu.jpg";
+		mm.innerHTML="谷歌搜索";
+	}
 	if(cc == "必应") {
 		//img.src = "images/bing.jpg";
 		mm.innerHTML="必应搜索";
