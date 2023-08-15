@@ -139,6 +139,7 @@ function xuanze() {
 	//alert(cc);
 	var hh = document.getElementById("neirong");
 	var haha = hh.value;
+        haha = haha.replace('+', '%2B');
 	//alert(haha);
 	if(cc == "百度") {
 		url = "https://www.baidu.com/s?&wd=" + haha;
