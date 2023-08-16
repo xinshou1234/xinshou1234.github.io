@@ -110,7 +110,7 @@ function qiehuan2(self){
         p[i].classList.remove("active");
     }
     self.classList.add("active");
-    xuanze2()
+    xuanze2();
 }
 
 function qiehuan3(self){   
@@ -119,7 +119,7 @@ function qiehuan3(self){
         p[i].classList.remove("active");
     }
     self.classList.add("active");
-    xuanze3()
+    xuanze3();
 }
 
 function qiehuan4(self){   
@@ -128,7 +128,7 @@ function qiehuan4(self){
         p[i].classList.remove("active");
     }
     self.classList.add("active");
-    xuanze4()
+    xuanze4();
 }
 
 function xuanze() {
