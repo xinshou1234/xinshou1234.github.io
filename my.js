@@ -66,7 +66,7 @@ function qiehuan(self){
         p[i].classList.remove("active");
     }
     self.classList.add("active");
-	var img = document.getElementById("img");
+	//var img = document.getElementById("img");
 	var mm=document.getElementById("mm");
 	var bb = self.getElementsByTagName('a');
 	var cc = bb[0].innerText;
