@@ -139,9 +139,9 @@ function xuanze() {
 	//alert(cc);
 	var hh = document.getElementById("neirong");
 	var haha = hh.value;
-	haha = haha.replace('%', '%25');
-        haha = haha.replace('+', '%2B');
-	haha = haha.replace('#', '%23');
+	haha = haha.replaceAll('%', '%25');
+        haha = haha.replaceAll('+', '%2B');
+	haha = haha.replaceAll('#', '%23');
 	//alert(haha);
 	if(cc == "百度") {
 		url = "https://www.baidu.com/s?&wd=" + haha;
