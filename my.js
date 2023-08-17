@@ -140,7 +140,7 @@ function xuanze() {
 	var hh = document.getElementById("neirong");
 	var haha = hh.value;
 	haha = haha.replace(/%/g, '%25');
-        haha = haha.replace(/+/g, '%2B');
+        haha = haha.replace(/\+/g, '%2B');
 	haha = haha.replace(/#/g, '%23');
 	alert(haha);
 	if(cc == "百度") {
