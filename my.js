@@ -142,7 +142,7 @@ function xuanze() {
 	haha = haha.replace(/%/g, '%25');
         haha = haha.replace(/\+/g, '%2B');
 	haha = haha.replace(/#/g, '%23');
-	alert(haha);
+	//alert(haha);
 	if(cc == "百度") {
 		url = "https://www.baidu.com/s?&wd=" + haha;
 		window.open(url, "_blank");
